@@ -151,7 +151,6 @@ export default function Home() {
     }, 4000);
   }, []);
 
-  // console.log("test flow", testFlows);
   const toggleTestCase = (id) => {
     setTestFlows((flow) =>
       flow.map((tc) => ({
@@ -205,7 +204,7 @@ export default function Home() {
           showWorkflowHeader={showWorkflowHeader}
           selectionMode={!showWorkflowHeader && testFlows.length > 0}
         />
-        {/* Right: Sidebar with controls */}
+
         <RightSideBar onGenerate={handleGenerate} isGenerating={isGenerating} />
       </div>
     </div>
