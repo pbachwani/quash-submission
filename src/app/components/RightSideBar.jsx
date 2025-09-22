@@ -75,7 +75,6 @@ const RightSideBar = ({ onGenerate, isGenerating }) => {
           </div>
         </>
       )}
-      {/* Add inputs here for PRD file, branch, etc. */}
 
       {isGenerating && (
         <>
@@ -83,7 +82,7 @@ const RightSideBar = ({ onGenerate, isGenerating }) => {
             <span className="text-xs">Generating test cases</span>
             <div className="w-2 h-2 bg-yellow-400 rounded-full animate-pulse" />
           </div>
-          <div className="p-3 rounded border border-[] h-full"></div>
+          <div className="p-3 rounded border h-full"></div>
         </>
       )}
     </aside>

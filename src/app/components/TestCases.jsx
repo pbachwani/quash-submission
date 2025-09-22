@@ -42,7 +42,7 @@ export default function TestCases({
     setDraggedIndex(null);
   };
 
-  console.log("test cases", testCases);
+  // console.log("test cases", testCases);
   return (
     <section className="h-screen flex-1 pl-6 text-white w-full overflow-y-scroll">
       {/* header text */}
@@ -51,7 +51,7 @@ export default function TestCases({
         <span> ({completedCount})</span>
       </div>
 
-      {/* test cases mapping here */}
+      {/* test cases mapping */}
       <div className="flex-1 overflow-y-auto">
         {testCases.map((testCase, index) => (
           <div
